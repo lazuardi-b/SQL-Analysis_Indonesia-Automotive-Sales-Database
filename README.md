@@ -36,11 +36,11 @@ I began with **Market Pulse** to establish the overall YTD market trend. Next, I
 
 The database is designed using a **Star Schema**, with `fact_sales` at the center and dimension tables describing brands, cars, production types, and dates.
 
-![Entity Relationship Diagram](assets\er_diagram_black.png)
+![Entity Relationship Diagram](assets/er_diagram_black.png)
 
 *Entity Relationship Diagram of the database.*
 
-For a detailed explanation of the ERD, entity definitions, and relationship mapping, see the [documentation.md](docs\documentation.md).
+For a detailed explanation of the ERD, entity definitions, and relationship mapping, see the [documentation.md](docs/documentation.md).
 
 ## Analysis 🔍
 
@@ -80,7 +80,7 @@ ORDER BY year DESC;
 | 2024 | 324,911 |
 | 2023 | 410,181 |
 
-![Market Pulse](assets\chart_01.png)
+![Market Pulse](assets/chart_01.png)
 *Line chart showing YTD wholesale sales volume (January–May) by year.*
 
 ### 2. Market Share
@@ -153,10 +153,6 @@ ORDER BY year DESC, sales_rank ASC;
 | 2023 | SUZUKI | 7.51% | 4 |
 | 2023 | MITSUBISHI MOTORS | 7.17% | 5 |
 
-![Market Share](/assets/2_market_share.png)
-
-*Bar chart showing the top five brands by YTD market share for each year.*
-
 ### 3. Production Strategy
 
 To compare production strategies, I aggregated YTD wholesale sales by production type (CKD vs. CBU) for each year, excluding records with unknown production types.
@@ -200,7 +196,7 @@ ORDER BY year DESC, total_sales DESC;
 | 2023 | CKD | 368,963 |
 | 2023 | CBU | 41,039 |
 
-![Production Strategy](assets\chart_03.png)
+![Production Strategy](assets/chart_03.png)
 
 *Column bar chart comparing YTD wholesale sales by production type (CKD vs. CBU).*
 
@@ -352,7 +348,7 @@ ORDER BY year DESC, monthly_rank ASC;
 | 2023 | jan | 92,650 | 2 |
 | 2023 | aug | 85,571 | 3 |
 
-![Seasonality](assets\chart_05.png)
+![Seasonality](assets/chart_05.png)
 
 *Line chart highlighting the top three highest-selling months for each year (2023–2025).*
 
@@ -393,7 +389,7 @@ CREATE INDEX idx_dates_yearmonth
 
 I encapsulated each business question into a reusable SQL `VIEW`, making the analysis easier to query while keeping the business logic centralized.
 
-For the complete `VIEW` definitions and implementation details, see the [documentation.md](docs\documentation.md) or [schema.sql](schema.sql).
+For the complete `VIEW` definitions and implementation details, see the [documentation.md](docs/documentation.md) or [schema.sql](schema.sql).
 
 ## Limitations
 
@@ -412,4 +408,4 @@ For the complete `VIEW` definitions and implementation details, see the [documen
 
 ## Documentation
 
-For readers interested in the database implementation, detailed documentation is available in the [documentation.md](docs\documentation.md), including the ERD, entity definitions, relationship mapping, and SQL `VIEW`s.
+For readers interested in the database implementation, detailed documentation is available in the [documentation.md](docs/documentation.md), including the ERD, entity definitions, relationship mapping, and SQL `VIEW`s.
