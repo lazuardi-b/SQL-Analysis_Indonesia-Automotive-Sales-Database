@@ -36,7 +36,7 @@ I began with **Market Pulse** to establish the overall YTD market trend. Next, I
 
 The database is designed using a **Star Schema**, with `fact_sales` at the center and dimension tables describing brands, cars, production types, and dates.
 
-![Entity Relationship Diagram](/assets/er_diagram_white.png)
+![ERD](assets/er_diagram_black.png)
 
 *Entity Relationship Diagram of the database.*
 
@@ -348,7 +348,7 @@ ORDER BY year DESC, monthly_rank ASC;
 | 2023 | jan | 92,650 | 2 |
 | 2023 | aug | 85,571 | 3 |
 
-![Seasonality](/assets/chart_05.png)
+![seasonal](assets/chart_05.png)
 
 *Line chart highlighting the top three highest-selling months for each year (2023–2025).*
 
