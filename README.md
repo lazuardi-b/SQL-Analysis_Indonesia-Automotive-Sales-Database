@@ -36,7 +36,7 @@ I began with **Market Pulse** to establish the overall YTD market trend. Next, I
 
 The database is designed using a **Star Schema**, with `fact_sales` at the center and dimension tables describing brands, cars, production types, and dates.
 
-![Entity Relationship Diagram](/assets/er_diagram_black.png)
+![Entity Relationship Diagram](/assets/er_diagram_white.png)
 
 *Entity Relationship Diagram of the database.*
 
