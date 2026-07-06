@@ -75,7 +75,7 @@ Each CSV file was imported into temporary staging tables in PostgreSQL using the
 ### Entity Relationship Diagram (ERD)
 The database is organized using a **Star Schema**, with `fact_sales` serving as the central fact table and four supporting dimension tables: `dim_brands`, `dim_cars`, `dim_productions`, and `dim_dates`.
 
-![ERD](/assets/er_diagram_white.png)
+![ERD](assets/er_diagram_white.png)
 *Entity Relationship Diagram of the database*
 
 The schema was developed through the normalization process, separating descriptive attributes from transactional sales data to reduce redundancy and maintain organized relationships. While `fact_sales` references the dimension tables through foreign keys, `dim_cars` also depends on `dim_brands`, creating the only parent-child relationship between dimensions.
