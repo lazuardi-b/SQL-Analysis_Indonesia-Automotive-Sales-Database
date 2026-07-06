@@ -348,7 +348,7 @@ ORDER BY year DESC, monthly_rank ASC;
 | 2023 | jan | 92,650 | 2 |
 | 2023 | aug | 85,571 | 3 |
 
-![seasonal](assets/chart_05.png)
+![Seasonality](assets/chart_05.png)
 
 *Line chart highlighting the top three highest-selling months for each year (2023–2025).*
 
